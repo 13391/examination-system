@@ -1,0 +1,64 @@
+{{include './header'}}
+<div class="layout layout-examination">
+    <div class="panel">
+        <span class="label">考试结束倒计时</span>
+        <div class="timer">
+            <span class="hour">01</span><span>:</span>
+            <span class="minute">43</span><span>:</span>
+            <span class="second">23</span>
+        </div>
+        <span class="ui button positive submit-answer">提交试卷</span>
+    </div>
+    <div class="question">
+        {{include './question'}}
+    </div>
+    <div class="paging">
+        <span class="ui button primary question-previous">上一题</span>
+        <span class="ui button primary question-next">下一题</span>
+    </div>
+    <div class="ui basic modal">
+        <i class="close icon"></i>
+        <div class="header">
+            存档的旧信息
+        </div>
+        <div class="content">
+            <div class="image">
+                <i class="archive icon"></i>
+            </div>
+            <div class="description">
+                <p>你的收件箱已经满了，你要我们将旧信息自动归档？</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="two fluid ui inverted buttons">
+                <div class="ui red basic inverted button">
+                    <i class="remove icon"></i>
+                    不
+                </div>
+                <div class="ui green basic inverted button">
+                    <i class="checkmark icon"></i>
+                    是的
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic modal submit-answer-confirm">
+        <i class="close">X</i>
+        <div class="header">
+            确认结束考试提交试卷？
+        </div>
+        <div class="content">
+        </div>
+        <div class="actions">
+            <div class="two fluid ui inverted buttons">
+                <div class="ui red basic inverted button close">
+                    不，返回继续答题
+                </div>
+                <div class="ui green basic inverted button">
+                    是的，帮我提交试卷
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

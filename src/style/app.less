@@ -1,0 +1,85 @@
+@width: 900px;
+#app {
+    overflow: hidden;
+    position: relative;
+    background-color: #fefefe;
+
+    &>.header {
+        background-color: #24292e;
+        color: rgba(255,255,255,0.75);
+        position: relative;
+        .content {
+            width: @width;
+            height: 50px;
+            margin: auto;
+        }
+        span, h3 {
+            display: inline-block;
+            line-height: 50px;
+        }
+        .username {
+            float: right;
+        }
+    }
+}
+
+.layout {
+    width: @width;
+    margin: auto;
+}
+
+.layout-sign {
+    width: @width;
+    margin: auto;
+    text-align: center;
+
+    .description {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+        background-color: #3c5876;
+    }
+    .sign {
+        width: 300px;
+        margin: 30px auto;
+        text-align: center;
+        vertical-align: top;
+        .form {
+            padding: 20px 14px;
+        }
+    }
+}
+
+.layout-examination {
+    margin-top: 30px;
+    .panel {
+        position: relative;
+        font-size: 24px;
+        padding: 10px 0;
+        overflow: hidden;
+    }
+    .submit-answer {
+        float: right;
+    }
+    .timer {
+        display: inline-block;
+    }
+    .question {
+        height: 400px;
+        padding: 50px 100px;
+        overflow-y: scroll;
+    }
+    .paging {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .button + .button {
+        margin-left: 20px;
+    }
+}
+
+.layout-examination-list {
+    & > .header {
+        padding: 20px 0;
+    }
+}

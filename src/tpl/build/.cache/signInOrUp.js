@@ -1,0 +1,7 @@
+/*TMODJS:{"version":49,"md5":"0a83b338b1208c9a08b44e2e9ac9d531"}*/
+template('signInOrUp',function($data,$filename
+/**/) {
+'use strict';var $utils=this,$helpers=$utils.$helpers,include=function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);$out+=text;return $out;},$out='';include('./header');
+$out+=' <div class="layout layout-sign"> <div class="description" hidden> </div> <div class="sign sign-in"> <form class="ui form segment"> <div class="field"> <input type="text" name="id" placeholder="学号"> </div> <div class="field"> <input type="password" name="password" placeholder="密码"> </div> <div class="ui buttons"> <div class="ui button primary button-sign-in">登录</div> <div class="or"></div> <div class="ui button green sign-up">注册</div> </div> </form> </div> <div class="sign sign-up" hidden> <form class="ui form segment"> <div class="field"> <input type="text" name="name" placeholder="姓名"> </div> <div class="field"> <input type="text" name="id" placeholder="学号"> </div> <div class="field"> <input type="password" name="password" placeholder="密码"> </div> <div class="field"> <input type="password" name="password-confirm" placeholder="确认密码"> </div> <div class="field"> <div class="ui checkbox"> <input type="checkbox" name="hot-deals"> <label>同意 <a href="#">作弊处理条款</a>。</label> </div> </div> <div class="ui buttons"> <div class="ui button green button-sign-up">注册</div> <div class="or"></div> <div class="ui button primary sign-in">登录</div> </div> </form> </div> </div>';
+return new String($out);
+});

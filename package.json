@@ -1,0 +1,26 @@
+{
+  "name": "examination-system",
+  "version": "0.1.0",
+  "description": "Examination system for 39 students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jiavan, jiavan.com@gmail.com; LiNing",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "semantic-ui": "^2.2.10"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-tmod": "^2.0.3",
+    "jquery": "^3.2.1",
+    "tmodjs": "^1.0.4"
+  }
+}
