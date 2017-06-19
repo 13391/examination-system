@@ -9,6 +9,11 @@
   "author": "Jiavan, jiavan.com@gmail.com; LiNing",
   "license": "GPL-3.0",
   "dependencies": {
+    "koa": "^2.2.0",
+    "koa-mysql-session": "0.0.2",
+    "koa-router": "^7.2.1",
+    "koa-session-minimal": "^3.0.4",
+    "koa-static": "^3.0.0",
     "semantic-ui": "^2.2.10"
   },
   "devDependencies": {

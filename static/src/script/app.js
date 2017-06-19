@@ -19,7 +19,6 @@ require.config({
 });
 
 require(['semantic', 'routes'], function (semantic, router,) {
-
     router.register();
 });
 

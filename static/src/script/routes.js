@@ -7,7 +7,7 @@
  */
 define(function (require) {
 
-    var Router = require('router');
+    var Router = require('./router');
     var router = new Router();
     router.init();
 
@@ -36,7 +36,7 @@ define(function (require) {
             var examList = require('./route/examinationList');
             examList.bindEvent();
         });
-        router.refresh();
+
     }
 
     return {

@@ -8,12 +8,12 @@ const del = require('del');
 const runSequence = require('gulp-run-sequence');
 
 // Run a static file source server
-gulp.task('server', () => {
-    return browserSync.init({
-        server: './',
-        port: 3000
-    });
-});
+// gulp.task('server', () => {
+//     return browserSync.init({
+//         server: './',
+//         port: 3000
+//     });
+// });
 
 // Build html file with tmod
 // gulp.task('tmod', () => {
@@ -39,10 +39,13 @@ gulp.task('clean', () => {
 gulp.task('default', () => {
 
     // Run task series
-    runSequence('clean', ['less'], 'server', () => {
+    // runSequence('clean', ['less'], 'server', () => {
+    //     console.log('Start running...');
+    // });
+    runSequence('clean', ['less'], () => {
         console.log('Start running...');
     });
     gulp.watch('./src/style/**/*.less', ['less']);
     // gulp.watch('./src/tpl/**/*.html', ['tmod']);
-    gulp.watch('./src/**').on('change', reload);
+    // gulp.watch('./src/**').on('change', reload);
 });
